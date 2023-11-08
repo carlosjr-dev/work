@@ -20,11 +20,11 @@ function App() {
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
     if (currentHour >= 6 && currentHour < 12) {
-      setTimeDay("Bom Dia!");
+      setTimeDay("Bom Dia !");
     } else if (currentHour >= 12 && currentHour < 18) {
-      setTimeDay("Boa Tarde!");
+      setTimeDay("Boa Tarde !");
     } else {
-      setTimeDay("Boa Noite!");
+      setTimeDay("Boa Noite !");
     }
   };
   const verify = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -173,13 +173,13 @@ function App() {
           <div className="titleTexts">
             {name}, {timeDay} <br />
             Segue o relatório de confronto de saldos referente à {filial}.{diff}{" "}
-            identificadas diferenças de saldo nos armazéns
+            identificadas diferenças de saldos nos armazéns
           </div>
           <div className="emailTitle">
             Nome do Arquivo <i className="fa-solid fa-box-archive"></i>{" "}
           </div>
           <div className="titleText">
-            CONFRONTO DE SALDOS ATUAL X ENDEREÇO_ {dataFormatada}_{namePast}
+            CONFRONTO DE SALDOS ATUAL X ENDEREÇO_{dataFormatada}_{namePast}
           </div>
         </section>
       </section>
