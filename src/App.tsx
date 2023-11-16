@@ -194,7 +194,7 @@ function App() {
           <div className="titleTexts">
             {name}, {timeDay} <br />
             Segue o relatório de confronto de saldos referente à {filial}.{diff}{" "}
-            identificadas diferenças de saldos nos armazéns
+            identificadas diferenças de saldos nos armazéns.
           </div>
           <div className="emailTitle">
             Nome do Arquivo <i className="fa-solid fa-box-archive"></i>{" "}
