@@ -29,12 +29,12 @@ function App() {
     }
   };
   const verify = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.value === "Rede Conectividade") {
-      setNamePast("CONECT");
-      setNumberEmp("10");
+    if (e.target.value === "Rede Informática / Filial Três Lagoas - MS") {
+      setNamePast("INF_06");
+      setNumberEmp("09");
     }
-    if (e.target.value === "Rede Informática / Filial Andradina") {
-      setNamePast("INF");
+    if (e.target.value === "Rede Informática / Filial Andradina - SP") {
+      setNamePast("INF_01");
       setNumberEmp("09");
     }
     if (e.target.value === "Rede Informática / Filial Campo Grande - MS") {
@@ -122,19 +122,12 @@ function App() {
         </div>
         <div className="radioBtn">
           <div className="inputName">
+     
             <input
               type="checkbox"
               name="filial"
-              value="Rede Conectividade"
-              checked={filial === "Rede Conectividade"}
-              onChange={handleChange}
-            />
-            <p>Três Lagoas</p>
-            <input
-              type="checkbox"
-              name="filial"
-              value="Rede Informática / Filial Andradina"
-              checked={filial === "Rede Informática / Filial Andradina"}
+              value="Rede Informática / Filial Andradina - SP"
+              checked={filial === "Rede Informática / Filial Andradina - SP"}
               onChange={handleChange}
             />
 
@@ -147,6 +140,14 @@ function App() {
               onChange={handleChange}
             />
             <p>Campo Grande</p>
+            <input
+              type="checkbox"
+              name="filial"
+              value="Rede Informática / Filial Três Lagoas - MS"
+              checked={filial === "Rede Informática / Filial Três Lagoas - MS"}
+              onChange={handleChange}
+            />
+            <p>Três Lagoas</p>
           </div>
         </div>
         <div className="emailTitle">
